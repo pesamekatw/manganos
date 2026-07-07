@@ -114,7 +114,7 @@ html, body {
 .hero-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('./assets/hero.png');
+  background-image: url('./assets/hero.webp');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -632,5 +632,13 @@ html, body {
     height: 40vh;
     min-height: 300px;
     border-radius: 0 0 24px 24px;
+  }
+
+  /* Make property card solid to avoid two-tone shade on overlap */
+  .property-card {
+    background: var(--color-surface);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   }
 }
